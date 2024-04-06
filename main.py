@@ -2,12 +2,13 @@ from tkinter import *
 from tkinter import messagebox
 from random import randint, choice, shuffle
 import json
+
 BLUE = "#e6ffff"
 PINK = "#ffe5e5"
 FONT = ("Arial", 16, "normal")
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
-# Password Generator Project
+# Password Generator 
 def generate_password():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
                'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
@@ -31,6 +32,7 @@ def generate_password():
 
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
+
 def save():
     web = entry_web.get()
     user = entry_user.get()
@@ -62,6 +64,7 @@ def save():
 
 
 # ---------------------------- SEARCH --------------------------------- #
+
 def search():
     web = entry_web.get()
     try:
